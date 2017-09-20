@@ -1,0 +1,72 @@
+/*CSS reset settings here*/
+*{
+    margin: 20px;
+    padding: 10px;
+   }
+   * #wrapper{
+   height:800px;
+    width: 1250px;
+    background-color: rgb(118, 111, 217);
+    margin: 10px auto;
+    padding: 10px
+   }
+   #header{
+    height: 95px;
+    background-color: rgba(189, 6, 6, 0.66);
+    margin: 12px;
+    color: #FCEFEF;
+    border-radius: 25px;
+   }
+   #navigation{
+    height: 300px;
+    width: 200px;
+    background-color: blue;
+    display: inline-block;
+    margin: 12px
+   }
+   .ul-nav-menu{
+       display: inline-block
+       width: 40px;
+   }
+
+   #main_content{
+    height: 550px;
+    width: 953px;
+    background-color: red;
+    float:right;
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 12px;
+    border-radius: 25px;
+   }
+   h2{
+       color: white;
+       padding: 10px;
+       display: initial
+   }
+   
+   .info{
+       width:800px;
+       margin-top:14px;
+       padding: 10px;
+       color: white;
+       display: inline block;
+       margin-bottom: 10px;
+   }
+  ul,li{
+      margin-top: 5px;
+      margin-bottom: 5px
+  }
+  a{
+      margin-left: 0px;
+      margin-right: 2px;
+  }
+   }
+   /* #advertisement{
+    height: 120px;
+    width: 825px;
+    background-color: purple;
+   margin-top: 300px;
+   margin-left: 10px; */
+   
+   } *
