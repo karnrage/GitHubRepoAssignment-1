@@ -1,0 +1,48 @@
+Last login: Mon Sep 18 18:14:29 on ttys000
+Catalinas-MacBook-Pro:~ catalinaene$ cd desktop
+Catalinas-MacBook-Pro:desktop catalinaene$ mkdir test
+Catalinas-MacBook-Pro:desktop catalinaene$ cd test
+Catalinas-MacBook-Pro:test catalinaene$ touch index.html
+Catalinas-MacBook-Pro:test catalinaene$ touch styles.css
+Catalinas-MacBook-Pro:test catalinaene$ touch commands.txt
+Catalinas-MacBook-Pro:test catalinaene$ cp index.html index_2.html
+Catalinas-MacBook-Pro:test catalinaene$ rm styles.css
+Catalinas-MacBook-Pro:test catalinaene$ cd..
+-bash: cd..: command not found
+Catalinas-MacBook-Pro:desktop catalinaene$ move test/index_2.html destination/index_2.html
+-bash: move: command not found
+Catalinas-MacBook-Pro:desktop catalinaene$ move [test/index_2.html] [destination/index_2.html]
+-bash: move: command not found
+Catalinas-MacBook-Pro:desktop catalinaene$ cd test
+Catalinas-MacBook-Pro:test catalinaene$ test/index_2.html destination/index_2.html
+-bash: test/index_2.html: No such file or directory
+Catalinas-MacBook-Pro:test catalinaene$ cd mv [index_2.html] [destination index_2.html]
+-bash: cd: mv: No such file or directory
+Catalinas-MacBook-Pro:test catalinaene$ mv [index_2.html] [destination index_2.html]
+usage: mv [-f | -i | -n] [-v] source target
+       mv [-f | -i | -n] [-v] source ... directory
+Catalinas-MacBook-Pro:test catalinaene$ index_2.html destination index_2.html
+-bash: index_2.html: command not found
+Catalinas-MacBook-Pro:test catalinaene$ ls
+commands.txt	index.html	index_2.html
+Catalinas-MacBook-Pro:test catalinaene$ cd ..
+Catalinas-MacBook-Pro:desktop catalinaene$ cd destination
+Catalinas-MacBook-Pro:destination catalinaene$ ls
+Catalinas-MacBook-Pro:desktop catalinaene$ mv ~/Documents/test index_2.html ~/destination/index_2.html
+usage: mv [-f | -i | -n] [-v] source target
+       mv [-f | -i | -n] [-v] source ... directory
+Catalinas-MacBook-Pro:desktop catalinaene$ mv test/index_2.html destination/index_2.html
+Catalinas-MacBook-Pro:desktop catalinaene$ cd test
+Catalinas-MacBook-Pro:test catalinaene$ ls
+commands.txt	index.html
+Catalinas-MacBook-Pro:test catalinaene$ cd ..
+Catalinas-MacBook-Pro:desktop catalinaene$ cd destination
+Catalinas-MacBook-Pro:destination catalinaene$ ls
+index_2.html
+Catalinas-MacBook-Pro:destination catalinaene$ cd ..
+Catalinas-MacBook-Pro:desktop catalinaene$ rmdir destination
+rmdir: destination: Directory not empty
+Catalinas-MacBook-Pro:desktop catalinaene$ rm-rf destination
+-bash: rm-rf: command not found
+Catalinas-MacBook-Pro:desktop catalinaene$ rm -rf destination
+Catalinas-MacBook-Pro:desktop catalinaene$ 

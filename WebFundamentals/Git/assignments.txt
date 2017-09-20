@@ -1,0 +1,134 @@
+Last login: Mon Sep 18 19:45:15 on ttys000
+Catalinas-MacBook-Pro:~ catalinaene$ cd desktop
+Catalinas-MacBook-Pro:desktop catalinaene$ mkdir DojoAssignments
+Catalinas-MacBook-Pro:desktop catalinaene$ cd DojoAssignments
+Catalinas-MacBook-Pro:DojoAssignments catalinaene$ touch WebFundamentals
+Catalinas-MacBook-Pro:DojoAssignments catalinaene$ touch Python
+Catalinas-MacBook-Pro:DojoAssignments catalinaene$ tough Mean
+-bash: tough: command not found
+Catalinas-MacBook-Pro:DojoAssignments catalinaene$ touch Ruby
+Catalinas-MacBook-Pro:DojoAssignments catalinaene$ ls
+Python		Ruby		WebFundamentals
+Catalinas-MacBook-Pro:DojoAssignments catalinaene$ touch Mean
+Catalinas-MacBook-Pro:DojoAssignments catalinaene$ ls
+Mean		Python		Ruby		WebFundamentals
+Catalinas-MacBook-Pro:DojoAssignments catalinaene$ cd Mean
+-bash: cd: Mean: Not a directory
+Catalinas-MacBook-Pro:DojoAssignments catalinaene$ cd .
+Catalinas-MacBook-Pro:DojoAssignments catalinaene$ open Mean
+Catalinas-MacBook-Pro:DojoAssignments catalinaene$ cd WebFundamentals
+-bash: cd: WebFundamentals: Not a directory
+Catalinas-MacBook-Pro:DojoAssignments catalinaene$ cf Mean
+-bash: cf: command not found
+Catalinas-MacBook-Pro:DojoAssignments catalinaene$ rm -rf
+Catalinas-MacBook-Pro:DojoAssignments catalinaene$ ls
+Mean		Python		Ruby		WebFundamentals
+Catalinas-MacBook-Pro:DojoAssignments catalinaene$ rm Mean
+Catalinas-MacBook-Pro:DojoAssignments catalinaene$ ls
+Python		Ruby		WebFundamentals
+Catalinas-MacBook-Pro:DojoAssignments catalinaene$ rm Python
+Catalinas-MacBook-Pro:DojoAssignments catalinaene$ rm Ruby
+Catalinas-MacBook-Pro:DojoAssignments catalinaene$ rm WebFundatmentals
+rm: WebFundatmentals: No such file or directory
+Catalinas-MacBook-Pro:DojoAssignments catalinaene$ mkdir WebFundamentals
+mkdir: WebFundamentals: File exists
+Catalinas-MacBook-Pro:DojoAssignments catalinaene$ ls
+WebFundamentals
+Catalinas-MacBook-Pro:DojoAssignments catalinaene$ rm WebFundamentals
+Catalinas-MacBook-Pro:DojoAssignments catalinaene$ ls
+Catalinas-MacBook-Pro:DojoAssignments catalinaene$ mkdir WebFundamentals
+Catalinas-MacBook-Pro:DojoAssignments catalinaene$ mkdir Python
+Catalinas-MacBook-Pro:DojoAssignments catalinaene$ mkdir Mean
+Catalinas-MacBook-Pro:DojoAssignments catalinaene$ mkdir Ruby
+Catalinas-MacBook-Pro:DojoAssignments catalinaene$ mkdir iOS
+Catalinas-MacBook-Pro:DojoAssignments catalinaene$ mkdir netCore
+Catalinas-MacBook-Pro:DojoAssignments catalinaene$ ls
+Mean		Ruby		iOS
+Python		WebFundamentals	netCore
+Catalinas-MacBook-Pro:DojoAssignments catalinaene$ cd WedFundamentals
+-bash: cd: WedFundamentals: No such file or directory
+Catalinas-MacBook-Pro:DojoAssignments catalinaene$ cd WebFundamentals
+Catalinas-MacBook-Pro:WebFundamentals catalinaene$ touch about.txt
+Catalinas-MacBook-Pro:WebFundamentals catalinaene$ ls
+about.txt
+Catalinas-MacBook-Pro:WebFundamentals catalinaene$ cd .
+Catalinas-MacBook-Pro:WebFundamentals catalinaene$ cd..
+-bash: cd..: command not found
+Catalinas-MacBook-Pro:WebFundamentals catalinaene$ cd ..
+Catalinas-MacBook-Pro:DojoAssignments catalinaene$ cd Python
+Catalinas-MacBook-Pro:Python catalinaene$ touch about.txt
+Catalinas-MacBook-Pro:Python catalinaene$ cd ..
+Catalinas-MacBook-Pro:DojoAssignments catalinaene$ cd Mean
+Catalinas-MacBook-Pro:Mean catalinaene$ touch about.txt
+Catalinas-MacBook-Pro:Mean catalinaene$ cd ..
+Catalinas-MacBook-Pro:DojoAssignments catalinaene$ cd Ruby
+Catalinas-MacBook-Pro:Ruby catalinaene$ touch about.txt 
+Catalinas-MacBook-Pro:Ruby catalinaene$ cd ..
+Catalinas-MacBook-Pro:DojoAssignments catalinaene$ cd iOS
+Catalinas-MacBook-Pro:iOS catalinaene$ touch about.txt
+Catalinas-MacBook-Pro:iOS catalinaene$ cd ..
+Catalinas-MacBook-Pro:DojoAssignments catalinaene$ cd netCore
+Catalinas-MacBook-Pro:netCore catalinaene$ touch about.txt
+Catalinas-MacBook-Pro:netCore catalinaene$ cd ..
+Catalinas-MacBook-Pro:DojoAssignments catalinaene$ cd Webfundamentals
+Catalinas-MacBook-Pro:Webfundamentals catalinaene$ mkdir Git
+Catalinas-MacBook-Pro:Webfundamentals catalinaene$ mkdir HTML
+Catalinas-MacBook-Pro:Webfundamentals catalinaene$ mkdir CSS
+Catalinas-MacBook-Pro:Webfundamentals catalinaene$ mkdir Javascript
+Catalinas-MacBook-Pro:Webfundamentals catalinaene$ cd ..
+Catalinas-MacBook-Pro:DojoAssignments catalinaene$ cd Webfundamentals
+Catalinas-MacBook-Pro:Webfundamentals catalinaene$ ls
+CSS		Git		HTML		Javascript	about.txt
+Catalinas-MacBook-Pro:Webfundamentals catalinaene$ cd Git
+Catalinas-MacBook-Pro:Git catalinaene$ touch about.txt
+Catalinas-MacBook-Pro:Git catalinaene$ cd .
+Catalinas-MacBook-Pro:Git catalinaene$ cd .
+Catalinas-MacBook-Pro:Git catalinaene$ cd ..
+Catalinas-MacBook-Pro:Webfundamentals catalinaene$ cd HTML
+Catalinas-MacBook-Pro:HTML catalinaene$ touch about.txt
+Catalinas-MacBook-Pro:HTML catalinaene$ cd ..
+Catalinas-MacBook-Pro:Webfundamentals catalinaene$ cd CSS
+Catalinas-MacBook-Pro:CSS catalinaene$ touch about.txt
+Catalinas-MacBook-Pro:CSS catalinaene$ cd ..
+Catalinas-MacBook-Pro:Webfundamentals catalinaene$ cd Javascript 
+Catalinas-MacBook-Pro:Javascript catalinaene$ touch about.txt
+Catalinas-MacBook-Pro:Javascript catalinaene$ cd ..
+Catalinas-MacBook-Pro:Webfundamentals catalinaene$ cd HTML
+Catalinas-MacBook-Pro:HTML catalinaene$ touch indentation.html
+Catalinas-MacBook-Pro:HTML catalinaene$ cd ..
+Catalinas-MacBook-Pro:Webfundamentals catalinaene$ cd .
+Catalinas-MacBook-Pro:Webfundamentals catalinaene$ cd ..
+Catalinas-MacBook-Pro:DojoAssignments catalinaene$ ls -R
+Mean		Ruby		iOS
+Python		WebFundamentals	netCore
+
+./Mean:
+about.txt
+
+./Python:
+about.txt
+
+./Ruby:
+about.txt
+
+./WebFundamentals:
+CSS		Git		HTML		Javascript	about.txt
+
+./WebFundamentals/CSS:
+about.txt
+
+./WebFundamentals/Git:
+about.txt
+
+./WebFundamentals/HTML:
+about.txt		indentation.html
+
+./WebFundamentals/Javascript:
+about.txt
+
+./iOS:
+about.txt
+
+./netCore:
+about.txt
+Catalinas-MacBook-Pro:DojoAssignments catalinaene$ 

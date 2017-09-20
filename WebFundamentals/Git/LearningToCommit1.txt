@@ -1,0 +1,109 @@
+Last login: Tue Sep 19 07:05:15 on ttys002
+Catalinas-MacBook-Pro:~ catalinaene$ cd desktop
+Catalinas-MacBook-Pro:desktop catalinaene$ mkdir gittest
+Catalinas-MacBook-Pro:desktop catalinaene$ cd gittest
+Catalinas-MacBook-Pro:gittest catalinaene$ git init
+Initialized empty Git repository in /Users/catalinaene/Desktop/gittest/.git/
+Catalinas-MacBook-Pro:gittest catalinaene$ touch index.html
+Catalinas-MacBook-Pro:gittest catalinaene$ touch styles.css
+Catalinas-MacBook-Pro:gittest catalinaene$ touch aboutMe.txt
+Catalinas-MacBook-Pro:gittest catalinaene$ git add .
+Catalinas-MacBook-Pro:gittest catalinaene$ git commit -m "added files to gittest"
+[master (root-commit) 8f518ab] added files to gittest
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 aboutMe.txt
+ create mode 100644 index.html
+ create mode 100644 styles.css
+Catalinas-MacBook-Pro:gittest catalinaene$ echo "My name is Catalina Ene. I've been in Chicago for one year now." >> aboutMe.txt
+Catalinas-MacBook-Pro:gittest catalinaene$ 
+Catalinas-MacBook-Pro:gittest catalinaene$ git add . 
+Catalinas-MacBook-Pro:gittest catalinaene$ git commit -m "updates aboutMe"
+[master f758246] updates aboutMe
+ 1 file changed, 1 insertion(+)
+Catalinas-MacBook-Pro:gittest catalinaene$ echo "Favorite Movie: Dirty Dancing" >> aboutMe.
+Catalinas-MacBook-Pro:gittest catalinaene$ git add . 
+Catalinas-MacBook-Pro:gittest catalinaene$ git commit -m " added movies"
+[master bde4500]  added movies
+ 1 file changed, 1 insertion(+)
+ create mode 100644 aboutMe.
+Catalinas-MacBook-Pro:gittest catalinaene$ git log
+commit bde4500b953bab9bdc434d5de1a14eff09d0a80c (HEAD -> master)
+Author: Catalina Ene <ene.catalina@ymail.com>
+Date:   Tue Sep 19 07:11:37 2017 -0500
+
+     added movies
+
+commit f758246b291ff6b268786f3196ed8e20a1dc1b61
+Author: Catalina Ene <ene.catalina@ymail.com>
+Date:   Tue Sep 19 07:10:43 2017 -0500
+
+    updates aboutMe
+
+commit 8f518ab2afb8fd4f50c60744193099bf87ba780e
+Author: Catalina Ene <ene.catalina@ymail.com>
+Date:   Tue Sep 19 07:09:51 2017 -0500
+
+    added files to gittest
+Catalinas-MacBook-Pro:gittest catalinaene$ git revert -n 100644 "aboutMe"
+fatal: bad revision '100644'
+Catalinas-MacBook-Pro:gittest catalinaene$ echo "Favorite Book: Harry Potter" >> aboutMe.txt
+Catalinas-MacBook-Pro:gittest catalinaene$ git log
+commit bde4500b953bab9bdc434d5de1a14eff09d0a80c (HEAD -> master)
+Author: Catalina Ene <ene.catalina@ymail.com>
+Date:   Tue Sep 19 07:11:37 2017 -0500
+
+     added movies
+
+commit f758246b291ff6b268786f3196ed8e20a1dc1b61
+Author: Catalina Ene <ene.catalina@ymail.com>
+Date:   Tue Sep 19 07:10:43 2017 -0500
+
+    updates aboutMe
+
+commit 8f518ab2afb8fd4f50c60744193099bf87ba780e
+Author: Catalina Ene <ene.catalina@ymail.com>
+Date:   Tue Sep 19 07:09:51 2017 -0500
+
+    added files to gittest
+Catalinas-MacBook-Pro:gittest catalinaene$ delete mode 100644
+-bash: delete: command not found
+Catalinas-MacBook-Pro:gittest catalinaene$ delete mode 100644 aboutMe.txt
+-bash: delete: command not found
+Catalinas-MacBook-Pro:gittest catalinaene$ git revert -n HEAD
+Catalinas-MacBook-Pro:gittest catalinaene$ git commit -m "revert 100644"
+[master 801382d] revert 100644
+ 1 file changed, 1 deletion(-)
+ delete mode 100644 aboutMe.
+Catalinas-MacBook-Pro:gittest catalinaene$ echo echo "Favorite Book: Harry Potter" >> aboutMe.txt
+Catalinas-MacBook-Pro:gittest catalinaene$ git add ..
+fatal: ..: '..' is outside repository
+Catalinas-MacBook-Pro:gittest catalinaene$ echo "Favorite Book: Harry Potter" >> aboutMe.txt
+Catalinas-MacBook-Pro:gittest catalinaene$ git add .
+Catalinas-MacBook-Pro:gittest catalinaene$ git commit -m " added fav book" 
+[master d9cc873]  added fav book
+ 1 file changed, 3 insertions(+)
+Catalinas-MacBook-Pro:gittest catalinaene$ git log
+commit d9cc87334114614837b6dbb809c637ae09142469 (HEAD -> master)
+Author: Catalina Ene <ene.catalina@ymail.com>
+Date:   Tue Sep 19 07:19:03 2017 -0500
+
+     added fav book
+
+commit 801382d91127ab5ea985abc52e1219fe52ecf244
+Author: Catalina Ene <ene.catalina@ymail.com>
+Date:   Tue Sep 19 07:17:16 2017 -0500
+
+    revert 100644
+
+commit bde4500b953bab9bdc434d5de1a14eff09d0a80c
+Author: Catalina Ene <ene.catalina@ymail.com>
+Date:   Tue Sep 19 07:11:37 2017 -0500
+
+     added movies
+
+commit f758246b291ff6b268786f3196ed8e20a1dc1b61
+Author: Catalina Ene <ene.catalina@ymail.com>
+Date:   Tue Sep 19 07:10:43 2017 -0500
+
+    updates aboutMe
+:

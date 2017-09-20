@@ -1,0 +1,167 @@
+Last login: Mon Sep 18 23:03:09 on ttys000
+Catalinas-MacBook-Pro:~ catalinaene$ cd desktop
+Catalinas-MacBook-Pro:desktop catalinaene$ mkdir gittest
+Catalinas-MacBook-Pro:desktop catalinaene$ cd gittest
+Catalinas-MacBook-Pro:gittest catalinaene$ git init
+Initialized empty Git repository in /Users/catalinaene/Desktop/gittest/.git/
+Catalinas-MacBook-Pro:gittest catalinaene$ touch index.html
+Catalinas-MacBook-Pro:gittest catalinaene$ touch styles.css
+Catalinas-MacBook-Pro:gittest catalinaene$ touch aboutMe.txt
+Catalinas-MacBook-Pro:gittest catalinaene$ git commit-m "added 3 new files"
+git: 'commit-m' is not a git command. See 'git --help'.
+
+The most similar command is
+	commit-tree
+Catalinas-MacBook-Pro:gittest catalinaene$ git commit -m "added 3 new files"
+On branch master
+
+Initial commit
+
+Untracked files:
+	aboutMe.txt
+	index.html
+	styles.css
+
+nothing added to commit but untracked files present
+Catalinas-MacBook-Pro:gittest catalinaene$ git log
+fatal: your current branch 'master' does not have any commits yet
+Catalinas-MacBook-Pro:gittest catalinaene$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	aboutMe.txt
+	index.html
+	styles.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+Catalinas-MacBook-Pro:gittest catalinaene$ git add
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+Catalinas-MacBook-Pro:gittest catalinaene$ git add .
+Catalinas-MacBook-Pro:gittest catalinaene$ git commit -m "added 3 new files"
+[master (root-commit) 4c858d9] added 3 new files
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 aboutMe.txt
+ create mode 100644 index.html
+ create mode 100644 styles.css
+Catalinas-MacBook-Pro:gittest catalinaene$ git log
+commit 4c858d9ad22c62063663f99335570d796119c7df (HEAD -> master)
+Author: Catalina Ene <ene.catalina@ymail.com>
+Date:   Tue Sep 19 00:05:29 2017 -0500
+Catalinas-MacBook-Pro:gittest catalinaene$ echo "My name is Catalina Ene. I've been in Chicago for one year now." >> aboutMe.txt
+Catalinas-MacBook-Pro:gittest catalinaene$ git add .
+Catalinas-MacBook-Pro:gittest catalinaene$ git commit -m "updated aboutMe"
+[master b099481] updated aboutMe
+ 1 file changed, 1 insertion(+)
+Catalinas-MacBook-Pro:gittest catalinaene$ git log
+commit b099481f4a497ce9a382bd30a5c2802d3d9d1ec0 (HEAD -> master)
+Author: Catalina Ene <ene.catalina@ymail.com>
+Date:   Tue Sep 19 00:08:05 2017 -0500
+
+    updated aboutMe
+
+commit 4c858d9ad22c62063663f99335570d796119c7df
+Author: Catalina Ene <ene.catalina@ymail.com>
+Date:   Tue Sep 19 00:05:29 2017 -0500
+
+    added 3 new files
+Catalinas-MacBook-Pro:gittest catalinaene$ echo "Favorite Movie: Dirty Dancing" >> aboutMe.txt
+Catalinas-MacBook-Pro:gittest catalinaene$ git add .
+Catalinas-MacBook-Pro:gittest catalinaene$ git commit -m "added favorite movie to aboutMe" 
+[master 84b8591] added favorite movie to aboutMe
+ 1 file changed, 1 insertion(+)
+Catalinas-MacBook-Pro:gittest catalinaene$ git log
+commit 84b8591cb13234b5ab78460809520b20d386a976 (HEAD -> master)
+Author: Catalina Ene <ene.catalina@ymail.com>
+Date:   Tue Sep 19 00:09:29 2017 -0500
+
+    added favorite movie to aboutMe
+
+commit b099481f4a497ce9a382bd30a5c2802d3d9d1ec0
+Author: Catalina Ene <ene.catalina@ymail.com>
+Date:   Tue Sep 19 00:08:05 2017 -0500
+
+    updated aboutMe
+
+commit 4c858d9ad22c62063663f99335570d796119c7df
+Author: Catalina Ene <ene.catalina@ymail.com>
+Date:   Tue Sep 19 00:05:29 2017 -0500
+
+    added 3 new files
+Catalinas-MacBook-Pro:gittest catalinaene$ git revert
+usage: git revert [<options>] <commit-ish>...
+   or: git revert <subcommand>
+
+    --quit                end revert or cherry-pick sequence
+    --continue            resume revert or cherry-pick sequence
+    --abort               cancel revert or cherry-pick sequence
+    -n, --no-commit       don't automatically commit
+    -e, --edit            edit the commit message
+    -s, --signoff         add Signed-off-by:
+    -m, --mainline <parent-number>
+                          select mainline parent
+    --rerere-autoupdate   update the index with reused conflict resolution if possible
+    --strategy <strategy>
+                          merge strategy
+    -X, --strategy-option <option>
+                          option for merge strategy
+    -S, --gpg-sign[=<key-id>]
+                          GPG sign commit
+
+Catalinas-MacBook-Pro:gittest catalinaene$ git commit -m "revert commit 84b8591cb13234b5ab78460809520b20d386a976"
+On branch master
+nothing to commit, working tree clean
+Catalinas-MacBook-Pro:gittest catalinaene$ git checkout 84b8591cb132
+Note: checking out '84b8591cb132'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+
+HEAD is now at 84b8591... added favorite movie to aboutMe
+Catalinas-MacBook-Pro:gittest catalinaene$ echo "Favorite book: The Jungle Book" >> aboutMe.txt
+Catalinas-MacBook-Pro:gittest catalinaene$ git add .
+Catalinas-MacBook-Pro:gittest catalinaene$ git commit -m "changed favorite book"
+[detached HEAD da18ed0] changed favorite book
+ 1 file changed, 1 insertion(+)
+Catalinas-MacBook-Pro:gittest catalinaene$ git log
+commit da18ed03dc6d9b4d4c162d5d58092cd299430523 (HEAD)
+Author: Catalina Ene <ene.catalina@ymail.com>
+Date:   Tue Sep 19 00:17:58 2017 -0500
+
+    changed favorite book
+
+commit 84b8591cb13234b5ab78460809520b20d386a976 (master)
+Author: Catalina Ene <ene.catalina@ymail.com>
+Date:   Tue Sep 19 00:09:29 2017 -0500
+
+    added favorite movie to aboutMe
+
+commit b099481f4a497ce9a382bd30a5c2802d3d9d1ec0
+Author: Catalina Ene <ene.catalina@ymail.com>
+Date:   Tue Sep 19 00:08:05 2017 -0500
+
+    updated aboutMe
+
+commit 4c858d9ad22c62063663f99335570d796119c7df
+Author: Catalina Ene <ene.catalina@ymail.com>
+Date:   Tue Sep 19 00:05:29 2017 -0500
+
+    added 3 new files
+Catalinas-MacBook-Pro:gittest catalinaene$ git-revert 84b8591cb132
+-bash: git-revert: command not found
+Catalinas-MacBook-Pro:gittest catalinaene$ git revert 84b8591cb132
+error: could not revert 84b8591... added favorite movie to aboutMe
+hint: after resolving the conflicts, mark the corrected paths
+hint: with 'git add <paths>' or 'git rm <paths>'
+hint: and commit the result with 'git commit'
+Catalinas-MacBook-Pro:gittest catalinaene$ 
