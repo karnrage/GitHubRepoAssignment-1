@@ -1,0 +1,126 @@
+#wrapper{
+    background-color: #2e5073;
+    height: 1120px;
+    width: 970px;
+}
+#header{
+    display: inline-block;
+    width: 970px;
+    height: 100px;
+}
+img{
+    width: 325px;
+}
+.box{
+    background-color: #444444;
+    display: inline-block;
+    margin-left: 700px;
+}
+.searchbox_1{
+    width: 200px;
+    vertical-align: middle;
+    white-space: nowrap;
+    margin: 20px;
+    margin-bottom: 8px;
+    display: inline-block;
+}
+.searchbox_1 button{
+    border: none;
+    background: #232833;
+    height: 35px;
+    width: 40px;
+    color: #2e5073;
+    opacity: 0px;
+    font-size: 10pt;
+    color: white;
+}
+p{
+    margin: 10px;
+    display: inline-block;
+    color: black;
+    margin-left: 50px;
+}
+.navigation{
+    background-color: #527ea9;
+    display: inline-block;
+    margin-top: 50px;
+    margin-left: 100px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.navigation p{
+    margin: 20px;
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+}
+.body{
+    display:inline-block;
+    width: 970px;
+}
+.nav-menu{
+    width: 120px;
+    margin: 60px;
+    padding: 60px;
+    /* background-color: whitesmoke; */
+    text-align: center;
+    display: inline-block;
+    vertical-align: 100px;
+}
+a{
+    color: white;
+    padding-right: 10px;
+}
+.nav-menu li{
+    font-size: 17px;
+    padding: 5px;
+    letter-spacing: .1em
+}
+.bodycontent{
+    text-align: center;  
+    width: 600px;
+    display: inline-block;
+    vertical-align: 100px;
+}
+.bottom{
+    background-color: white;
+    height: 345px;
+    display: inline-block;
+    width: 970px;
+}
+.bar{
+    background-color: #7da6d1; 
+    width: 330px;
+    height: 5px;
+}
+.gettingstarted, .applications{
+    width: 350px;
+    display: inline-block;
+    padding: 60px;
+} 
+h1{
+    text-align: center;
+
+}  
+.gettingstarted p, .applications p{
+    text-align: center;
+}
+.gettingstarted ul, .applications ul{
+    color: #85acd4;
+}
+.footer{
+    display: inline-block;
+    margin: 0px;
+    width: 970px;
+    height: 150px;
+    background: linear-gradient(#4170a1, #0C1D2E)
+}
+h2{
+    display: inline-block;
+    color: #88b0da;  
+    font-size: 25px; 
+    margin: 25px;
+    margin-top: 65px;
+    margin-left: 43px;
+    font-weight: normal;
+}
