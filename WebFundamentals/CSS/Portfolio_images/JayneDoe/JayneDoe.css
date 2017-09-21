@@ -1,0 +1,97 @@
+{
+    margin: 200px;
+    padding: 500px;
+   }
+#wrapper{
+    height: 1000px;
+    width: 1000px;
+    background-color: #553855;
+    margin: 10px auto;
+    padding: 10px;
+}
+#header{
+    height: 50px;
+    width: 1000px;
+    background-color: silver;
+    color: #FCEFEF;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+#about{
+    background-color: white;
+    height: 300px;
+    width:500px;
+    display: inline block;
+    float: right;
+    margin-right: 15px;
+    margin-left: 15px;
+
+}
+.jayne{
+    margin-left: 20px;
+    display: inline block;
+    padding-left: 5px;
+    padding-right: 20px;
+    width: 400px;
+    margin-top: 0px;
+    float: left;
+    height: 300px
+}
+.top{
+    padding-bottom: 20px;
+    width: 1000px;
+    height: 200px;
+}
+#main_content{
+    display: inline-block;
+    width: 1000px;
+    margin: 20px
+}
+
+.La_Mode{
+    display: inline-block;
+    width: 300px;
+    overflow: auto;
+    background-color: white;
+    /* height: 500px */
+}
+.Family_Contacts{
+    display: inline-block;
+    /* padding:10px; */
+    width: 300px;
+    background-color: white;
+    /* height: 500px; */
+}
+.fiveEleven{
+    display: inline-block;
+    width: 300px;
+    background-color: white;
+    /* height:500px; */
+}
+.lamodeimage,.fiveimage,.familyimage{
+    width: 275px;
+    height: 200px;
+}
+.logos1 img,.logos2 img,.logos3 img{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    padding: 20px;
+}
+
+.alignmodcontent1, .alignmodcontent2, .alignmodcontent3{
+    width: 400;
+    margin: 5px; 
+}
+h2{
+    background-color: rgba(116, 111, 111, 0.51);
+    margin-bottom: 0px;
+    width:300px;
+    margin-top: 0px;
+    height: 50px;
+    align-content: left;
+    color: white;    
+} 
+.h3{
+    background-color: grey;
+}
