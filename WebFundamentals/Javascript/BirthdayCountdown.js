@@ -1,10 +1,11 @@
-var DaysUntilMyBirthday = 2;
+var DaysUntilMyBirthday = 0;
 
-if (DaysUntilMyBirthday > 30){
+if(DaysUntilMyBirthday > 30){
     console.log("Don't worry the big day will come fast!!!")
 }
-if (DaysUntilMyBirthday < 30){
-    console.log("Almost there!!!!")
+else if(DaysUntilMyBirthday > 1 <=30){
+    console.log(DaysUntilMyBirthday,"days", "Almost there!!")
 }
-else (DaysUntilMyBirthday < 5);
-    console.log("Just a few days away from the big day!! Happy Birthday!!!")
+else{
+console.log('♪ღ♪*•.¸¸¸.•*¨¨*•.¸¸¸.•*•♪ღ♪¸.•*¨¨*•.¸¸¸.•*•♪ღ♪•*♪ღ♪░H░A░P░P░Y░ B░I░R░T░H░D░A░Y░░♪ღ♪*•♪ღ♪*•.¸¸¸.•*¨¨*•.¸¸¸.•*•♪¸.•*¨¨*•.¸¸¸.•*•♪ღ♪•«');
+}
