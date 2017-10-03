@@ -8,10 +8,10 @@ def identify_list_list(lst):
 
     for x in lst:
         if isinstance(x,int) or isinstance(x,float):
-        total = sum + x
+            total = sum + x
         elif isinstance(x,str):
-        new_list += x
-
+            new_list += x
+    if new_string
     
 
 
