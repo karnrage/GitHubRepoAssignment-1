@@ -1,0 +1,16 @@
+.wrapper{
+    width: 1000px;
+    display: inline-block;
+}
+.pokemon_box{
+    width: 700px;
+    height: 500px;
+    display: inline-block;
+}
+.index{
+    display: inline-block;
+    width: 200px;
+    height: 500px;
+    border: 5px solid red;
+    vertical-align: top;
+}

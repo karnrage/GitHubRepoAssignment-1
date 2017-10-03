@@ -1,0 +1,9 @@
+.wrapper{
+    display: block
+}
+img{
+    display: block;
+    width: 300px;
+    height: 100px;
+    margin: 5px;
+}
